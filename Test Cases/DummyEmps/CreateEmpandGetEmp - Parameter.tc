@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CreateEmpandGetEmp - Parameter</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>10efc825-bbad-41d5-9dea-9b07b36f744d</testCaseGuid>
+   <variable>
+      <defaultValue>'10000'</defaultValue>
+      <description></description>
+      <id>1e30abd2-fc9f-4ea2-8ebf-60b78ca929fd</id>
+      <masked>false</masked>
+      <name>salary</name>
+   </variable>
+   <variable>
+      <defaultValue>'30'</defaultValue>
+      <description></description>
+      <id>58e59f1f-ac7b-4491-b573-6dc1bce51c63</id>
+      <masked>false</masked>
+      <name>age</name>
+   </variable>
+</TestCaseEntity>

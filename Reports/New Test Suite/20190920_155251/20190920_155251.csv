@@ -1,0 +1,48 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+New Test Suite,,,,2019-09-20 15:52:55,2019-09-20 15:53:03,8.588s,INCOMPLETE
+,,,,,,,
+Test Cases/DummyEmps/CreateEmpandGetEmp - Parameter,,,,2019-09-20 15:52:56,2019-09-20 15:53:02,6.097s,PASSED
+date = new java.util.Date(),,,,2019-09-20 15:52:56,2019-09-20 15:52:56,0.036s,PASSED
+datevalue = date.toString(),,,,2019-09-20 15:52:56,2019-09-20 15:52:57,0.051s,PASSED
+"datevalue = datevalue.replace("" "", """")",,,,2019-09-20 15:52:57,2019-09-20 15:52:57,0.006s,PASSED
+"datevalue = datevalue.replace("":"", """")",,,,2019-09-20 15:52:57,2019-09-20 15:52:57,0.031s,PASSED
+println(datevalue),,,,2019-09-20 15:52:57,2019-09-20 15:52:57,0.015s,PASSED
+"EmpName = ""Test_Kk1"" + datevalue",,,,2019-09-20 15:52:57,2019-09-20 15:52:57,0.457s,PASSED
+println(EmpName),,,,2019-09-20 15:52:57,2019-09-20 15:52:57,0.001s,PASSED
+"response = sendRequest(findTestObject(""DummyEmp/CreateandgetEmp"", [""EmpName"":EmpName, ""sal"":salary, ""age"":age]))",,,,2019-09-20 15:52:57,2019-09-20 15:53:00,2.676s,PASSED
+println(response.getResponseBodyContent()),,,,2019-09-20 15:53:00,2019-09-20 15:53:00,0.013s,PASSED
+res = response.getResponseBodyContent(),,,,2019-09-20 15:53:00,2019-09-20 15:53:00,0.004s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2019-09-20 15:53:00,2019-09-20 15:53:00,0.010s,PASSED
+parsedJson = slurper.parseText(res),,,,2019-09-20 15:53:00,2019-09-20 15:53:00,0.028s,PASSED
+println(parsedJson),,,,2019-09-20 15:53:00,2019-09-20 15:53:00,0.004s,PASSED
+fetchedid = id,,,,2019-09-20 15:53:00,2019-09-20 15:53:00,0.012s,PASSED
+println(fetchedid),,,,2019-09-20 15:53:00,2019-09-20 15:53:00,0.007s,PASSED
+EmpId = fetchedid,,,,2019-09-20 15:53:00,2019-09-20 15:53:00,0.011s,PASSED
+"assert containsString(response, datevalue, false)",,,,2019-09-20 15:53:00,2019-09-20 15:53:00,0.027s,PASSED
+println(response.getResponseBodyContent()),,,,2019-09-20 15:53:00,2019-09-20 15:53:00,0.002s,PASSED
+"verifyElementPropertyValue(response, ""name"", EmpName)",,,,2019-09-20 15:53:00,2019-09-20 15:53:00,0.183s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2019-09-20 15:53:00,2019-09-20 15:53:00,0.044s,PASSED
+"callTestCase(findTestCase(""DummyEmps/GetEmp-single""), [:], STOP_ON_FAILURE)",,,,2019-09-20 15:53:00,2019-09-20 15:53:02,1.588s,PASSED
+,,,,,,,
+Test Cases/DummyEmps/CreateEmpandGetEmp - Parameter,,,,2019-09-20 15:53:02,2019-09-20 15:53:03,1.705s,PASSED
+date = new java.util.Date(),,,,2019-09-20 15:53:02,2019-09-20 15:53:02,0.001s,PASSED
+datevalue = date.toString(),,,,2019-09-20 15:53:02,2019-09-20 15:53:02,0.012s,PASSED
+"datevalue = datevalue.replace("" "", """")",,,,2019-09-20 15:53:02,2019-09-20 15:53:02,0.001s,PASSED
+"datevalue = datevalue.replace("":"", """")",,,,2019-09-20 15:53:02,2019-09-20 15:53:02,0.001s,PASSED
+println(datevalue),,,,2019-09-20 15:53:02,2019-09-20 15:53:02,0.001s,PASSED
+"EmpName = ""Test_Kk1"" + datevalue",,,,2019-09-20 15:53:02,2019-09-20 15:53:02,0.001s,PASSED
+println(EmpName),,,,2019-09-20 15:53:02,2019-09-20 15:53:02,0.005s,PASSED
+"response = sendRequest(findTestObject(""DummyEmp/CreateandgetEmp"", [""EmpName"":EmpName, ""sal"":salary, ""age"":age]))",,,,2019-09-20 15:53:02,2019-09-20 15:53:02,0.667s,PASSED
+println(response.getResponseBodyContent()),,,,2019-09-20 15:53:02,2019-09-20 15:53:02,0.001s,PASSED
+res = response.getResponseBodyContent(),,,,2019-09-20 15:53:02,2019-09-20 15:53:02,0.001s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2019-09-20 15:53:02,2019-09-20 15:53:02,0.001s,PASSED
+parsedJson = slurper.parseText(res),,,,2019-09-20 15:53:02,2019-09-20 15:53:02,0.001s,PASSED
+println(parsedJson),,,,2019-09-20 15:53:02,2019-09-20 15:53:02,0.001s,PASSED
+fetchedid = id,,,,2019-09-20 15:53:02,2019-09-20 15:53:02,0.006s,PASSED
+println(fetchedid),,,,2019-09-20 15:53:02,2019-09-20 15:53:02,0.001s,PASSED
+EmpId = fetchedid,,,,2019-09-20 15:53:02,2019-09-20 15:53:02,0.001s,PASSED
+"assert containsString(response, datevalue, false)",,,,2019-09-20 15:53:02,2019-09-20 15:53:02,0.004s,PASSED
+println(response.getResponseBodyContent()),,,,2019-09-20 15:53:02,2019-09-20 15:53:02,0.002s,PASSED
+"verifyElementPropertyValue(response, ""name"", EmpName)",,,,2019-09-20 15:53:02,2019-09-20 15:53:03,0.033s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2019-09-20 15:53:03,2019-09-20 15:53:03,0.006s,PASSED
+"callTestCase(findTestCase(""DummyEmps/GetEmp-single""), [:], STOP_ON_FAILURE)",,,,2019-09-20 15:53:03,2019-09-20 15:53:03,0.908s,PASSED

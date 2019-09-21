@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites name="New Test Suite" time="8" tests="2" failures="0" errors="0">
+    <testsuite name="New Test Suite" tests="2" failures="0" errors="0" time="8" timestamp="2019-09-20 15:52:55" hostname="kkale - XIPL9199.xpanxion.co.in" id="Test Suites/New Test Suite">
+        <properties>
+            <property name="deviceName" value=""/>
+            <property name="devicePlatform" value=""/>
+            <property name="logFolder" value="C:\\Users\\kkale\\Katalon Studio\\APITest\\Reports\\New Test Suite\\20190920_155251"/>
+            <property name="logFiles" value="C:\\Users\\kkale\\Katalon Studio\\APITest\\Reports\\New Test Suite\\20190920_155251\\execution0.log"/>
+            <property name="attachments" value=""/>
+            <property name="hostName" value="kkale - XIPL9199.xpanxion.co.in"/>
+            <property name="hostAddress" value="172.30.24.113"/>
+            <property name="os" value="Windows 10 64bit"/>
+            <property name="katalonVersion" value="6.2.2.4"/>
+        </properties>
+        <testcase name="Test Cases/DummyEmps/CreateEmpandGetEmp - Parameter" classname="Test Cases/DummyEmps/CreateEmpandGetEmp - Parameter" status="PASSED">
+            <system-out>2019-09-20 15:52:56 - [TEST_CASE][PASSED] - Test Cases/DummyEmps/CreateEmpandGetEmp - Parameter: Test Cases/DummyEmps/CreateEmpandGetEmp - Parameter&#xD;
+&#xD;
+2019-09-20 15:52:56 - [TEST_STEP][PASSED] - date = new java.util.Date(): null&#xD;
+&#xD;
+2019-09-20 15:52:56 - [TEST_STEP][PASSED] - datevalue = date.toString(): null&#xD;
+&#xD;
+2019-09-20 15:52:57 - [TEST_STEP][PASSED] - datevalue = datevalue.replace(" ", ""): null&#xD;
+&#xD;
+2019-09-20 15:52:57 - [TEST_STEP][PASSED] - datevalue = datevalue.replace(":", ""): null&#xD;
+&#xD;
+2019-09-20 15:52:57 - [TEST_STEP][PASSED] - println(datevalue): null&#xD;
+&#xD;
+2019-09-20 15:52:57 - [TEST_STEP][PASSED] - EmpName = "Test_Kk1" + datevalue: null&#xD;
+&#xD;
+2019-09-20 15:52:57 - [TEST_STEP][PASSED] - println(EmpName): null&#xD;
+&#xD;
+2019-09-20 15:52:57 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("DummyEmp/CreateandgetEmp", ["EmpName":EmpName, "sal":salary, "age":age])): Send request successfully&#xD;
+&#xD;
+2019-09-20 15:53:00 - [MESSAGE][INFO] - HAR: C:\Users\kkale\Katalon Studio\APITest\Reports\New Test Suite\20190920_155251\requests\main\0.har&#xD;
+&#xD;
+2019-09-20 15:53:00 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-09-20 15:53:00 - [TEST_STEP][PASSED] - println(response.getResponseBodyContent()): null&#xD;
+&#xD;
+2019-09-20 15:53:00 - [TEST_STEP][PASSED] - res = response.getResponseBodyContent(): null&#xD;
+&#xD;
+2019-09-20 15:53:00 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-09-20 15:53:00 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(res): null&#xD;
+&#xD;
+2019-09-20 15:53:00 - [TEST_STEP][PASSED] - println(parsedJson): null&#xD;
+&#xD;
+2019-09-20 15:53:00 - [TEST_STEP][PASSED] - fetchedid = id: null&#xD;
+&#xD;
+2019-09-20 15:53:00 - [TEST_STEP][PASSED] - println(fetchedid): null&#xD;
+&#xD;
+2019-09-20 15:53:00 - [TEST_STEP][PASSED] - EmpId = fetchedid: null&#xD;
+&#xD;
+2019-09-20 15:53:00 - [TEST_STEP][PASSED] - assert containsString(response, datevalue, false): Check contain string successfully&#xD;
+&#xD;
+2019-09-20 15:53:00 - [MESSAGE][PASSED] - Check contain string successfully&#xD;
+&#xD;
+2019-09-20 15:53:00 - [TEST_STEP][PASSED] - println(response.getResponseBodyContent()): null&#xD;
+&#xD;
+2019-09-20 15:53:00 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "name", EmpName): Verify element property value successfully&#xD;
+&#xD;
+2019-09-20 15:53:00 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-20 15:53:00 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-20 15:53:00 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-20 15:53:00 - [TEST_STEP][PASSED] - callTestCase(findTestCase("DummyEmps/GetEmp-single"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/DummyEmps/GetEmp-single' successfully&#xD;
+&#xD;
+2019-09-20 15:53:00 - [TEST_CASE][PASSED] - Test Cases/DummyEmps/GetEmp-single: Test Cases/DummyEmps/GetEmp-single&#xD;
+&#xD;
+2019-09-20 15:53:01 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("DummyEmp/GetEmp")): Send request successfully&#xD;
+&#xD;
+2019-09-20 15:53:02 - [MESSAGE][INFO] - HAR: C:\Users\kkale\Katalon Studio\APITest\Reports\New Test Suite\20190920_155251\requests\main\1.har&#xD;
+&#xD;
+2019-09-20 15:53:02 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-09-20 15:53:02 - [TEST_STEP][PASSED] - println(response.getResponseBodyContent()): null&#xD;
+&#xD;
+2019-09-20 15:53:02 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-20 15:53:02 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-20 15:53:02 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/DummyEmps/GetEmp-single' successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/DummyEmps/CreateEmpandGetEmp - Parameter" classname="Test Cases/DummyEmps/CreateEmpandGetEmp - Parameter" status="PASSED">
+            <system-out>2019-09-20 15:53:02 - [TEST_CASE][PASSED] - Test Cases/DummyEmps/CreateEmpandGetEmp - Parameter: Test Cases/DummyEmps/CreateEmpandGetEmp - Parameter&#xD;
+&#xD;
+2019-09-20 15:53:02 - [TEST_STEP][PASSED] - date = new java.util.Date(): null&#xD;
+&#xD;
+2019-09-20 15:53:02 - [TEST_STEP][PASSED] - datevalue = date.toString(): null&#xD;
+&#xD;
+2019-09-20 15:53:02 - [TEST_STEP][PASSED] - datevalue = datevalue.replace(" ", ""): null&#xD;
+&#xD;
+2019-09-20 15:53:02 - [TEST_STEP][PASSED] - datevalue = datevalue.replace(":", ""): null&#xD;
+&#xD;
+2019-09-20 15:53:02 - [TEST_STEP][PASSED] - println(datevalue): null&#xD;
+&#xD;
+2019-09-20 15:53:02 - [TEST_STEP][PASSED] - EmpName = "Test_Kk1" + datevalue: null&#xD;
+&#xD;
+2019-09-20 15:53:02 - [TEST_STEP][PASSED] - println(EmpName): null&#xD;
+&#xD;
+2019-09-20 15:53:02 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("DummyEmp/CreateandgetEmp", ["EmpName":EmpName, "sal":salary, "age":age])): Send request successfully&#xD;
+&#xD;
+2019-09-20 15:53:02 - [MESSAGE][INFO] - HAR: C:\Users\kkale\Katalon Studio\APITest\Reports\New Test Suite\20190920_155251\requests\main\2.har&#xD;
+&#xD;
+2019-09-20 15:53:02 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-09-20 15:53:02 - [TEST_STEP][PASSED] - println(response.getResponseBodyContent()): null&#xD;
+&#xD;
+2019-09-20 15:53:02 - [TEST_STEP][PASSED] - res = response.getResponseBodyContent(): null&#xD;
+&#xD;
+2019-09-20 15:53:02 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-09-20 15:53:02 - [TEST_STEP][PASSED] - parsedJson = slurper.parseText(res): null&#xD;
+&#xD;
+2019-09-20 15:53:02 - [TEST_STEP][PASSED] - println(parsedJson): null&#xD;
+&#xD;
+2019-09-20 15:53:02 - [TEST_STEP][PASSED] - fetchedid = id: null&#xD;
+&#xD;
+2019-09-20 15:53:02 - [TEST_STEP][PASSED] - println(fetchedid): null&#xD;
+&#xD;
+2019-09-20 15:53:02 - [TEST_STEP][PASSED] - EmpId = fetchedid: null&#xD;
+&#xD;
+2019-09-20 15:53:02 - [TEST_STEP][PASSED] - assert containsString(response, datevalue, false): Check contain string successfully&#xD;
+&#xD;
+2019-09-20 15:53:02 - [MESSAGE][PASSED] - Check contain string successfully&#xD;
+&#xD;
+2019-09-20 15:53:02 - [TEST_STEP][PASSED] - println(response.getResponseBodyContent()): null&#xD;
+&#xD;
+2019-09-20 15:53:02 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "name", EmpName): Verify element property value successfully&#xD;
+&#xD;
+2019-09-20 15:53:03 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-20 15:53:03 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-20 15:53:03 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-20 15:53:03 - [TEST_STEP][PASSED] - callTestCase(findTestCase("DummyEmps/GetEmp-single"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/DummyEmps/GetEmp-single' successfully&#xD;
+&#xD;
+2019-09-20 15:53:03 - [TEST_CASE][PASSED] - Test Cases/DummyEmps/GetEmp-single: Test Cases/DummyEmps/GetEmp-single&#xD;
+&#xD;
+2019-09-20 15:53:03 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("DummyEmp/GetEmp")): Send request successfully&#xD;
+&#xD;
+2019-09-20 15:53:03 - [MESSAGE][INFO] - HAR: C:\Users\kkale\Katalon Studio\APITest\Reports\New Test Suite\20190920_155251\requests\main\3.har&#xD;
+&#xD;
+2019-09-20 15:53:03 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-09-20 15:53:03 - [TEST_STEP][PASSED] - println(response.getResponseBodyContent()): null&#xD;
+&#xD;
+2019-09-20 15:53:03 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-20 15:53:03 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-20 15:53:03 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/DummyEmps/GetEmp-single' successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <system-out>2019-09-20 15:52:55 - [TEST_SUITE][INCOMPLETE] - New Test Suite: null</system-out>
+        <system-err>2019-09-20 15:52:55 - [TEST_SUITE][INCOMPLETE] - New Test Suite: null</system-err>
+    </testsuite>
+</testsuites>
